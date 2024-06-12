@@ -1,0 +1,50 @@
+#services {
+    margin: 0px;
+    padding: 0px;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 900px) {
+    .menu_list{
+        width: 100%;
+        text-align: left;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: row;
+    }
+    #logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    #navbar ul {
+        /* width: 100%; */
+        /* opacity: 0; */
+        /* visibility: hidden; */
+    }
+    #home {
+        display: flex;
+        height: 70vh;
+        text-align: center;
+    }
+
+    #home::before {
+
+        height: 70%;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: space-around;
+        /* height: 20vh;    */
+    }
+
+}

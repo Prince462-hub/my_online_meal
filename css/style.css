@@ -1,0 +1,311 @@
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+/* CSS Variables */
+/* Navigation Bar and Logo */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Logo */
+#navbar h1 {
+    /* z-index: -1; */
+    font-size: 2rem;
+    font-weight: 600;
+    margin: .4rem 1rem 0rem .8rem;
+    padding: .4rem 1rem 0rem .2rem;
+}
+
+/* #logo img{
+    margin: 3px 3px;
+    height: 60px;
+}  */
+/* Navigation Bar */
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+#iconbar {
+    color: black;
+    font-size: 2rem;
+}
+
+/* #navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .8;
+} */
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex-direction: row;
+    /* margin-top: .2rem;  */
+    /* background-color: rgb(250, 238, 198); */
+}
+
+#navbar ul li a {
+    display: block;
+    border-radius: 22px;
+    color: black;
+    padding: 4px 10px;
+    text-decoration: none;
+    /* background-color: black; */
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Section */
+section h1 {
+    font-size: 3.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#home::before {
+    content: "";
+    background: url('../image/pizza1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 74vh;
+    width: 100vw;
+    z-index: -2;
+    opacity: 0.8;
+}
+
+#home p {
+    font-size: 1.4rem;
+}
+
+/* Services */
+#services {
+    margin: 3px 34px;
+    display: flex;
+}
+
+#services h1 {
+    height: 60px;
+}
+
+#services .box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid brown;
+    padding: 33px;
+    margin: 4px 8px;
+    border-radius: 30px;
+    text-shadow: 4px 6px 8px;
+    box-shadow: 8px 12px 15px;
+}
+
+#services .box h2 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#services .box p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+    width: 55%;
+}
+
+#services h1 {
+    font-size: 3.8rem;
+}
+
+/* Client Section */
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#client-section h1 {
+    /* display: block; */
+    padding: 30px;
+}
+
+.client-item {
+    padding: 20px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../image/bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 25vh;
+    z-index: -1;
+    opacity: 0.4;
+    overflow: scroll;
+}
+
+.client-item img {
+    height: 120px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../image/contact-us-1908762_640.png')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.formgroup input {
+    display: flex;
+    padding: 8px;
+    width: 45vw;
+    height: 4vh;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.formgroup textarea {
+    display: flex;
+    width: 45vw;
+    height: 8vh;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding-top: 4%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#button {
+    display: block;
+    margin: auto;
+    width: 60vw;
+    height: 12vh;
+    margin-top: 60px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+footer #copyright {
+    height: 25px;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+    /* height: 120px; */
+}
+
+#home p {
+    text-align: center;
+    /* font-size: 1.5rem; */
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+}
